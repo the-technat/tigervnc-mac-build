@@ -65,6 +65,8 @@ jobs:
         with:
             repository: "TigerVNC/tigervnc"
             ref: "master"
+      - name: Install dependencies
+        run: sudo apt install -f ffmpeg
       - name: Setup java
         uses: actions/setup-java@v4
         with:
